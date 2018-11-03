@@ -6,7 +6,7 @@ function connect() {
     var host = document.location.host;
     var pathname = document.location.pathname;
     
-    ws = new WebSocket("ws://" +"localhost:8080"+"/websocket" + "/"+username);
+    ws = new WebSocket("ws://" +"http://proj309-sb-04.misc.iastate.edu:8080"+"/websocket" + "/"+username);
 
     ws.onmessage = function(event) {
     var log = document.getElementById("log");
