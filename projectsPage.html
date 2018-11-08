@@ -43,8 +43,9 @@
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#learning">Personal Learnings</a>
 					</li>
+					<hr />
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="index.html">Take me Home!!</a>
+						<a class="nav-link js-scroll-trigger" href="index.html">HomePage</a>
 					</li>
 				</ul>
 			</div>
@@ -52,7 +53,7 @@
 		<div class="container-fluid p-0">
 			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="309">
 				<div class="my-auto">
-					<h2 color = "red"><em>STILL WORK IN PROGRESS</em></h2>
+					<h3><em>Project still in progress...</em></h2>
 					<h1 class="mb-0">ComS 309 -
 						<span class="text-primary">TwentyOne</span>
 					</h1>
@@ -69,7 +70,7 @@
 					<h3>What is TwentyOne</h3>
 					<p>TwentyOne is the app my three group members and I have been developing. It is an android app with a client built in android studio and a backend made on the Spring Framework with integration to a mySQL server. The server was supplied and hosted by Iowa State University.</p>
 					
-					<h3>First Project Iteration</h3>
+					<h2>First Project Iteration</h2>
 					<p class = "mb-0">The following images are taken from the first iteration of TwentyOne.</p>
 					<p>
 					<img style = "padding:5px;" src="img/TitleCard.png" height = "320" width = "180" />
@@ -78,6 +79,21 @@
 					<img style = "padding:5px;" src="img/JoinLobby.png" height = "320" width = "180" />
 					<img style = "padding:5px;" src="img/GameScreen.png" height = "320" width = "180" />
 					</p>
+					<h3>Issues and concerns with first iteration.</h3>
+					<p>For this first demo we ran into a few issues. The big problems we worked to address in the next demo were as follows:</p>
+					<ol>
+						<li>Lobby ready up page does not update regularly</li>
+						<li>Refresh button was temporarily added until we can get the game to update automatically</li>
+						<li>Mysterious crash occurs when attempting to join lobby on Android 8.1.0 OREO</li>
+						<li>Player 3 and 4 should not show when there are only two players in the game</li>
+					</ol>
+					<p>We plan to solve these issues with the following:</p>
+					<ol>
+						<li>Have the lobby screen update regularly or implement web sockets that tell other players when a player is ready</li>
+						<li>Have the game screen update by using web sockets. Whenever someone hits or stays they send a message to other players</li>
+						<li>Debug the code looking for what error is being thrown when attempting to access lobby screen</li>
+						<li>Double check the multiplayer screen code for a simple error since player 4 disappears when there are only 3 players.</li>
+					</ol>
 					
 				</div>
 			</section>
@@ -114,7 +130,6 @@
 					<h3>Mars Rover - Final Design</h3>
 					<p>For the final demonstration of this project my group was placed in at an isolated computer blind to the testing field. This field was littered with obstacles, holes, and 4 goal posts which we needed to drive our rover into.</p>
 					<p>The majority of the work for this project was in the data collection. The IR sensor required the implementation of an ADC function. The servo required a timer in PWM configuration so I could feed it specific values that align with specific angles. The iRobat came with a handy Open Interface that allowed for easy movement controls. Finally we needed WiFi communication to send the bot commands. Each of these programs were written from scratch in C.</p>
-					<h2>TODO -- Finish Rover Design Process (insert videos/pictures)</h2>
 				</div>
 			</section>
 			<div class="container-fluid p-0">
@@ -141,7 +156,6 @@
 				</section>
 
 				<h3>Last Updated 11/5/2018</h3>
-				<p><a href ="Client_JS/index.html">test</a></p>
 			</div>
 		</div>
 		<!-- Bootstrap core JavaScript -->
