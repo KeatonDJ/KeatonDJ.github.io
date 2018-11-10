@@ -121,14 +121,13 @@
 						<li>PWM timer mode for Servo use</li>
 					</ul>
 					<h3>Mars Rover - Object detection</h3>
-					
+					<div><iframe width="560" height="315" src="https://www.youtube.com/embed/i6QayVtvsXU" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 					<p>In this portion of the project we were tasked with detecting objects using an IR sensor and PING))) sensor attached to a servo. To accomplish this I had to servo position increment while taking sonar and IR readings. The reason for both is that the sensors we used were good at specific things. The IR sensor was really good at detecting at what angles there was an object and the sonar sensor was really good at reading the distance of that object.</p>
 					<p>After gathering both data sets (180 values for each sensor), we wrote a program that looked at the IR sensor for when it saw a drop in the average distance. We then checked the distance data from the PING))) sensor and calculated how far away it was.</p>
 					<p>Finally, we needed to know how wide the object was. This was accomplished by using the distance value and the angles that this object was present. With this information we could then use the equation</p>
 					<p><em>tan(objectAngle/2) = 2*width / distance</em></p>
-					
 					<p>to calculate the width of that object by solving for width. Once the program was finished with it's calculations it points at the object that was smallest.</p>
-
+					<p><img src="img/RoverCalculations.png"  width = "580" height = "350" alt = "" /></p>
 					<h3>Mars Rover - Final Design</h3>
 					<p>For the final demonstration of this project my group was placed in at an isolated computer blind to the testing field. This field was littered with obstacles, holes, and 4 goal posts which we needed to drive our rover into.</p>
 					<p>The majority of the work for this project was in the data collection. The IR sensor required the implementation of an ADC function. The servo required a timer in PWM configuration so I could feed it specific values that align with specific angles. The iRobat came with a handy Open Interface that allowed for easy movement controls. Finally we needed WiFi communication to send the bot commands. Each of these programs were written from scratch in C.</p>
