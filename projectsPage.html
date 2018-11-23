@@ -63,7 +63,7 @@
 					<h1 class="mb-0">ComS 309 -
 						<span class="text-primary">TwentyOne</span>
 					</h1>
-					<div class="subheading mb-5">This project is an android app based on the casino game Blackjack developed in ComS 309 at ISU. This project is intended to be made in 4 development cycles. Each cycle is as follows:
+					<div class="mb-5">This project is an android app based on the casino game Blackjack developed in ComS 309 at ISU. This project is intended to be made in 4 development cycles. Each cycle is as follows:
 						<ul>
 							<li>First: This first demo covered the project proposal and each group members roles.</li>
 							<li>Second: The second demo required the app to have "round trip" communication. Client to Server, Server to Database, Database to Server, Server to Client.</li>
@@ -82,9 +82,9 @@
 					<img class="myImg" style = "padding:5px;" src="img/TitleCard.png" height = "320" width = "180" alt = "Title Card" />
 					<img class="myImg" style = "padding:5px;" src="img/LoginScreen.png" height = "320" width = "180" alt = "Login Screen" />
 					<img class="myImg" style = "padding:5px;" src="img/AccountCreation.png" height = "320" width = "180" alt = "Account Creation" />
-					<img style = "padding:5px;" src="img/JoinLobby.png" height = "320" width = "180" alt = "Join Lobby" />
-					<img style = "padding:5px;" src="img/ReadyUp.png" height = "320" width = "180" alt = "Ready Up" />
-					<img style = "padding:5px;" src="img/GameScreen.png" height = "320" width = "180" alt = "Game Screen" />
+					<img class="myImg" style = "padding:5px;" src="img/JoinLobby.png" height = "320" width = "180" alt = "Join Lobby" />
+					<img class="myImg" style = "padding:5px;" src="img/ReadyUp.png" height = "320" width = "180" alt = "Ready Up" />
+					<img class="myImg" style = "padding:5px;" src="img/GameScreen.png" height = "320" width = "180" alt = "Game Screen" />
 					
 					
 					</p>
@@ -108,8 +108,15 @@
 					<p>CI/CD implementation for our project allows for seamless integration and 100% server uptime after each addition.<br />
 					The following are the stages of the pipeline:</p>
 					<ol>
-					<li>Spring Build</li>
+					<li>Maven Build - Builds the Spring Boot project.</li>
+					<li>Maven Test - Tests the built project.</li>
+					<li>Autodeploy - Builds the Spring Boot project and outputs a jar. (see below for more information)</li>
+					<li>Android Build - Builds the Android Project and adds the APK to the artifacts.</li>
+					<li>Android Test - Tests the Android Project.</li>
 					</ol>
+					
+					<h3>Autodeploy</h3>
+					<p>In stage 3 of the pipeline a jar is produced and moved to a target folder. After the jar is moved, a service I created on the redhat server executes which runs the jar.</p>
 					<p>Example of recent pipeline</p>
 					
 					<!-- Trigger the Modal -->
@@ -163,7 +170,7 @@
 					<p>Finally, we needed to know how wide the object was. This was accomplished by using the distance value and the angles that this object was present. With this information we could then use the equation</p>
 					<p><em>tan(objectAngle/2) = 2*width / distance</em></p>
 					<p>to calculate the width of that object by solving for width. Once the program was finished with it's calculations it points at the object that was smallest.</p>
-					<p><img src="img/RoverCalculations.png"  width = "580" height = "350" alt = "" /></p>
+					<p><img class = "myImg" src="img/RoverCalculations.png"  width = "580" height = "350" alt = "Distance and Width Measurements" /></p>
 					<h3>Mars Rover - Final Design</h3>
 					<p>For the final demonstration of this project my group was placed in at an isolated computer blind to the testing field. This field was littered with obstacles, holes, and 4 goal posts which we needed to drive our rover into.</p>
 					<p>The majority of the work for this project was in the data collection. The IR sensor required the implementation of an ADC function. The servo required a timer in PWM configuration so I could feed it specific values that align with specific angles. The iRobat came with a handy Open Interface that allowed for easy movement controls. Finally we needed WiFi communication to send the bot commands. Each of these programs were written from scratch in C.</p>
@@ -181,7 +188,7 @@
 						<h2>Alarm Clock: <a href="https://keatondj.github.io/KeatonDJReact">Try Me!</a></h2>
 						<p>Primarily I have completed a simple alarm clock app that alerts the user when the chosen alarm time matches the current time.</p>
 						<h3>First iteration:</h3>
-						<p class = "mt-5 mb-0"><img src = "img/App.png" alt = ""</p>
+						<p class = "mt-5 mb-0"><img class = "myImg" src = "img/App.png" alt = "React App Image"</p>
 						<p>Currently the features I have implemented are:</p>
 						<ol>
 							<li>Alerts user when current time == alarm time</li>
@@ -228,7 +235,7 @@
 				</div>
 			</section>
 
-				<h3>Last Updated 11/8/2018</h3>
+				<h3>Last Updated 11/23/2018</h3>
 			</div>
 		
 		<!-- Modal image JS -->
