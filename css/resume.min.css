@@ -37,19 +37,3 @@
  .text-primary{color:#4F2683!important}
  a{color:#4F2683}
  a:active,a:focus,a:hover{color:#824027}
- 
- .video-container {
-	position:relative;
-	padding-bottom:28.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:28.25%;
-	height:100%;
-}

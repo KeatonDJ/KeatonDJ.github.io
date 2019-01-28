@@ -59,7 +59,6 @@
 		<div class="container-fluid p-0">
 			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="309">
 				<div class="my-auto">
-					<h3><em>Project still in progress...</em></h3>
 					<h1 class="mb-0">ComS 309 -
 						<span class="text-primary">TwentyOne</span>
 					</h1>
@@ -122,22 +121,30 @@
 					<!-- Trigger the Modal -->
 					<img class="myImg" src="img/cicd.png" alt="CI/CD Pipeline" style="width:100%;max-width:560px" />
 
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-
-						<!-- The Close Button -->
-						<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-						<!-- Modal Content (The Image) -->
-						<img class="modal-content" id="img01" />
-
-						<!-- Modal Caption (Image Text) -->
-						<div id="caption"></div>
-					</div>
+					
 					<p><a href="files/ymlFile.txt">YML Config File</a></p>
 
 					<p>I configured gitlab to build the spring project and output a jar which it then moves to a target folder on the server.</p>
 					
+					<h2>Final Implementation</h2>
+					<p>In this final implementation we completed the following things</p>
+					<ol>
+						<li>Single Player Integration</li>
+						<li>Leader-board Integration</li>
+						<li>Mysterious crash issue</li>
+						<li>Player 3 and 4 do not show up if there are only 2 players</li>
+					</ol>
+					
+					<p>The single player function is very similar to the multi-player but is only a game between the dealer and the player. We needed to create 3 game completion states. Player won, loss, or tied. Additionally, at the end you can restart or return home.</p>
+					
+					<p>Below are screenshots from the final implementation</p>
+					
+					<p>
+						<img class="myImg" style = "padding:5px;" src="img/SinglePlayer.png" height = "320" width = "180" alt = "Title Card" />
+						<img class="myImg" style = "padding:5px;" src="img/SinglePlayerWin.png" height = "320" width = "180" alt = "Title Card" />
+						<img class="myImg" style = "padding:5px;" src="img/SinglePlayerTied.png" height = "320" width = "180" alt = "Title Card" />
+						<img class="myImg" style = "padding:5px;" src="img/SinglePlayerLoss.png" height = "320" width = "180" alt = "Title Card" />
+					</p>
 					
 				</div>
 			</section>
@@ -164,13 +171,13 @@
 						<li>PWM timer mode for Servo use</li>
 					</ul>
 					<h3>Mars Rover - Object detection</h3>
-					<div><iframe width="560" height="315" src="https://www.youtube.com/embed/i6QayVtvsXU" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+					<iframe  src="https://www.youtube.com/embed/i6QayVtvsXU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					<p>In this portion of the project we were tasked with detecting objects using an IR sensor and PING))) sensor attached to a servo. To accomplish this I had to servo position increment while taking sonar and IR readings. The reason for both is that the sensors we used were good at specific things. The IR sensor was really good at detecting at what angles there was an object and the sonar sensor was really good at reading the distance of that object.</p>
 					<p>After gathering both data sets (180 values for each sensor), we wrote a program that looked at the IR sensor for when it saw a drop in the average distance. We then checked the distance data from the PING))) sensor and calculated how far away it was.</p>
 					<p>Finally, we needed to know how wide the object was. This was accomplished by using the distance value and the angles that this object was present. With this information we could then use the equation</p>
 					<p><em>tan(objectAngle/2) = 2*width / distance</em></p>
 					<p>to calculate the width of that object by solving for width. Once the program was finished with it's calculations it points at the object that was smallest.</p>
-					<p><img class = "myImg" src="img/RoverCalculations.png"  width = "580" height = "350" alt = "Distance and Width Measurements" /></p>
+					<p><img src="img/RoverCalculations.png" width = "50%" height = "auto" alt = "Distance and Width Measurements" /></p>
 					<h3>Mars Rover - Final Design</h3>
 					<p>For the final demonstration of this project my group was placed in at an isolated computer blind to the testing field. This field was littered with obstacles, holes, and 4 goal posts which we needed to drive our rover into.</p>
 					<p>The majority of the work for this project was in the data collection. The IR sensor required the implementation of an ADC function. The servo required a timer in PWM configuration so I could feed it specific values that align with specific angles. The iRobat came with a handy Open Interface that allowed for easy movement controls. Finally we needed WiFi communication to send the bot commands. Each of these programs were written from scratch in C.</p>
@@ -236,6 +243,20 @@
 			</section>
 
 				<h3>Last Updated 11/28/2018</h3>
+			</div>
+			
+			
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img01" />
+
+				<!-- Modal Caption (Image Text) -->
+				<div id="caption"></div>
 			</div>
 		
 		<!-- Modal image JS -->
