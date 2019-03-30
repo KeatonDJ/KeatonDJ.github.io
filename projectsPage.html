@@ -19,11 +19,11 @@
 		<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 		<!-- Custom styles for this template -->
 		<link href="css/resume.min.css" rel="stylesheet">
-		
+
 		<!-- Modal image css -->
 		<link href="css/modal.css" rel="stylesheet">
 		<script src="vendor/jquery/jquery.min.js"></script>
-		
+
 	</head>
 	<body id="page-top">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -37,6 +37,9 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#319">SE 319 - Libertas</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#309">ComS 309 - TwentyOne</a>
 					</li>
@@ -56,6 +59,40 @@
 				</ul>
 			</div>
 		</nav>
+
+		<div class="container-fluid p-0">
+			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="319">
+				<div class="my-auto">
+					<h1 class="mb-0">SE 319 -
+						<span class="text-primary">Libertas</span>
+					</h1>
+
+					<h3 class="mb-0"><em>Work in progress this semester!</h3>
+					<h4 class="subheading mb-5">I will be updating this section as we progress</em></h4>
+
+					<div class="mb-5"><h3>What is Libertas?</h3>
+						Libertas is an online, web-based digital goods store where users are able to produce digital content like art and photography.
+						These producers will have the option to distribute their content for free, on a subscription, or per piece. An account is required to view the website but is free to sign up.
+						This project is to be completed by a group of 4 people including myself. We be writing the client side using ReactJS and handling HTTP requests to a mySQL database using Node.js.
+						HTTP requests from the client to the server will be handled using Axios.<br /><br />
+						For the full project proposal, <a href="319Proposal.pdf">click here</a>
+					</div>
+					<h3>Client - ReactJS</h3>
+					<p>For this project I will be exploring ReactJS with another one of my team members.</p>
+					<h3>Server - Node.js</h3>
+					<p>We will be utlizing Node.js to fulfill the need for HTTP requests. </p><br />
+
+					<h4>This project will utilize the scrum model for workflow.</h4>
+					<ol>
+						<li>First Iteration - Create Login Page and establish round connection (client->server->database->server->client)</li>
+						<li>Second Iteration - TBD (Decided 4/5)</li>
+					</ol>
+
+
+			</section>
+		</div>
+
+
 		<div class="container-fluid p-0">
 			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="309">
 				<div class="my-auto">
@@ -74,7 +111,7 @@
 
 					<h3>What is TwentyOne</h3>
 					<p>TwentyOne is the app my three group members and I have been developing. It is an android app with a client built in android studio and a backend made on the Spring Framework with integration to a mySQL server. The server was supplied and hosted by Iowa State University.</p>
-					
+
 					<h2>First Project Iteration</h2>
 					<p class = "mb-0">The following images are taken from the first iteration of TwentyOne.</p>
 					<p>
@@ -84,8 +121,8 @@
 					<img class="myImg" style = "padding:5px;" src="img/JoinLobby.png" height = "320" width = "180" alt = "Join Lobby" />
 					<img class="myImg" style = "padding:5px;" src="img/ReadyUp.png" height = "320" width = "180" alt = "Ready Up" />
 					<img class="myImg" style = "padding:5px;" src="img/GameScreen.png" height = "320" width = "180" alt = "Game Screen" />
-					
-					
+
+
 					</p>
 					<h3>Issues and concerns with first iteration.</h3>
 					<p>For this first demo we ran into a few issues. The big problems we worked to address in the next demo were as follows:</p>
@@ -102,7 +139,7 @@
 						<li>Debug the code looking for what error is being thrown when attempting to access lobby screen</li>
 						<li>Double check the multiplayer screen code for a simple error since player 4 disappears when there are only 3 players.</li>
 					</ol>
-					
+
 					<h2>gitlab CI/CD implementation</h2>
 					<p>CI/CD implementation for our project allows for seamless integration and 100% server uptime after each addition.<br />
 					The following are the stages of the pipeline:</p>
@@ -113,19 +150,19 @@
 					<li>Android Build - Builds the Android Project and adds the APK to the artifacts.</li>
 					<li>Android Test - Tests the Android Project.</li>
 					</ol>
-					
+
 					<h3>Autodeploy</h3>
 					<p>In stage 3 of the pipeline a jar is produced and moved to a target folder. After the jar is moved, a service I created on the redhat server executes which runs the jar.</p>
 					<p>Example of recent pipeline</p>
-					
+
 					<!-- Trigger the Modal -->
 					<img class="myImg" src="img/cicd.png" alt="CI/CD Pipeline" style="width:100%;max-width:560px" />
 
-					
+
 					<p><a href="files/ymlFile.txt">YML Config File</a></p>
 
 					<p>I configured gitlab to build the spring project and output a jar which it then moves to a target folder on the server.</p>
-					
+
 					<h2>Final Implementation</h2>
 					<p>In this final implementation we completed the following things</p>
 					<ol>
@@ -134,18 +171,18 @@
 						<li>Mysterious crash issue</li>
 						<li>Player 3 and 4 do not show up if there are only 2 players</li>
 					</ol>
-					
+
 					<p>The single player function is very similar to the multi-player but is only a game between the dealer and the player. We needed to create 3 game completion states. Player won, loss, or tied. Additionally, at the end you can restart or return home.</p>
-					
+
 					<p>Below are screenshots from the final implementation</p>
-					
+
 					<p>
 						<img class="myImg" style = "padding:5px;" src="img/SinglePlayer.png" height = "320" width = "180" alt = "Title Card" />
 						<img class="myImg" style = "padding:5px;" src="img/SinglePlayerWin.png" height = "320" width = "180" alt = "Title Card" />
 						<img class="myImg" style = "padding:5px;" src="img/SinglePlayerTied.png" height = "320" width = "180" alt = "Title Card" />
 						<img class="myImg" style = "padding:5px;" src="img/SinglePlayerLoss.png" height = "320" width = "180" alt = "Title Card" />
 					</p>
-					
+
 				</div>
 			</section>
 		</div>
@@ -184,7 +221,7 @@
 				</div>
 			</section>
 		</div>
-		
+
 		<div class="container-fluid p-0">
 			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="reactjs">
 				<div class="my-auto">
@@ -214,11 +251,11 @@
 							<li>Both current time buttons occasionally decrement when they are supposed to increment. (And vise versa)</li>
 						</ol>
 				</div>
-			
+
 			</section>
-		
+
 		</div>
-		
+
 		<div class="container-fluid p-0">
 			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="learning">
 				<div class="my-auto">
@@ -229,6 +266,7 @@
 						<div class="subheading">What I am learning</div>
 						<h3>React JS</h3>
 						<p>My current progress on learning ReactJS is listed <a class="js-scroll-trigger" href="#reactjs">above</a>.</p>
+						<p>In addition, I am developing a ReactJS App for my SE 319 class which is described <a class="js-scroll-trigger" href="#319">here</a></p>
 						<h3>Git</h3>
 						<p>Until this year I never fully understood nor properly used Git. However, this year I made it a point to get more familiar with what git was and how to use it. Specifically, I wanted to learn using git bash since using commands will give me more control and versatility than a client would.</p>
 						<h3>Bootstrap</h3>
@@ -242,10 +280,10 @@
 				</div>
 			</section>
 
-				<h3>Last Updated 3/4/2019</h3>
+				<h3>Last Updated 3/30/2019</h3>
 			</div>
-			
-			
+
+
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
 
@@ -258,7 +296,7 @@
 				<!-- Modal Caption (Image Text) -->
 				<div id="caption"></div>
 			</div>
-		
+
 		<!-- Modal image JS -->
 		<script src="js/modal.js"></script>
 		<!-- Bootstrap core JavaScript -->
