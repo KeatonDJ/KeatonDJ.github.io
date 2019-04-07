@@ -75,18 +75,42 @@
 						These producers will have the option to distribute their content for free, on a subscription, or per piece. An account is required to view the website but is free to sign up.
 						This project is to be completed by a group of 4 people including myself. We will be writing the client side using ReactJS and handling HTTP requests to a mySQL database using Node.js.
 						HTTP requests from the client to the server will be handled using Axios.<br /><br />
-						For the full project proposal, <a href="319Proposal.pdf">click here</a>
+						For the full project proposal, <a href="319Proposal.pdf">click here</a><br /><br />
+						We will be using gitlab CI/CD in order to keep constant integration and deployment. This will automatically transfer the ReactJS build and Node.js server to our Virtual Machine which hosts the project.
 					</div>
 					<h3>Client - ReactJS</h3>
-					<p>For this project I will be exploring ReactJS with another one of my team members.</p>
-					<h3>Server - Node.js</h3>
-					<p>We will be utlizing Node.js to fulfill the need for HTTP requests. </p><br />
+					<p>For this project I will be exploring ReactJS with another one of my team members. In order to make a multi-page website using ReactJS we decided to use react-router.
+						This manages what components will be displayed by accessing a certain url.</p>
 
-					<h4>This project will utilize the scrum model for workflow.</h4>
+					<p>Libertas will be hosted on a virtual machine through Iowa State University where both the website and node.js server will be on the same machine.</p>
+					<h3 class="mt-5">Server - Node.js</h3>
+					<p>We will be utlizing Node.js to fulfill the need for HTTP requests.</p>
+					<p>The Node.js server will be used to supply the website with user login information, profile information, user subscriptions, and user content.
+						 It will also be used to post new accounts and user content</p>
+
+					<h4 class="mt-5">This project will utilize the scrum model for workflow.</h4>
 					<ol>
-						<li>First Iteration - Create Login Page and establish round connection (client->server->database->server->client)</li>
-						<li>Second Iteration - TBD (Decided 4/5)</li>
+						<li>First Iteration 4/5 - Create Login Page and establish round connection (client->server->database->server->client)</li>
+						<li>Second Iteration 4/19 - Create a user's profile page which will be receive all their posts using HTTP requests</li>
 					</ol>
+
+					<h3 class="mt-5">First Iteration:</h3>
+					<p>In this iteration we were able to sucessfully deploy two servers, one hosting the website and the other hosting the node server that handles HTTP requests to our
+						 mySQL database. Currently this database hold user information which can be requested to verify login credentials or posted when a user creates an account on the website.</p>
+					<p>We successfully utilized Axios to handle both forms of requests to the server from the ReactJS app.</p>
+					<p>We also were able to create a basic container which will be filled with varios components based on the website's current route. As of now there are two routes, login and signup</p>
+
+					<h3>Screenshots</h3>
+					<ol>
+						<li>Container with no components</li>
+						<li>Container with login component</li>
+						<li>Container with signup component</li>
+					</ol>
+					<img class="myImg" style = "padding:5px;" src="img/319/Container.PNG" height = "360" width = "640" alt = "Container" />
+					<img class="myImg" style = "padding:5px;" src="img/319/Login.png" height = "360" width = "640" alt = "Login" />
+					<img class="myImg" style = "padding:5px;" src="img/319/Signup.PNG" height = "360" width = "640" alt = "Signup" />
+
+
 
 
 			</section>
@@ -280,7 +304,7 @@
 				</div>
 			</section>
 
-				<h3>Last Updated 3/30/2019</h3>
+				<h3>Last Updated 4/7/2019</h3>
 			</div>
 
 
